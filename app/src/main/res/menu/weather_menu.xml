@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/temp_unit"
+        android:icon="@drawable/units_f"
+        android:onClick="convertUnit"
+        android:title="Convert C To F"
+        app:showAsAction="collapseActionView"
+        android:iconTint="@color/dark_brown"/>
+
+    <item
+        android:id="@+id/weather_forecast"
+        android:icon="@drawable/daily"
+        android:onClick="openCalendar"
+        android:title="Next 15 days Forecast"
+        app:showAsAction="collapseActionView" />
+
+    <item
+        android:id="@+id/location"
+        android:icon="@drawable/location"
+        android:iconTint="#FFFFFF"
+        android:onClick="selectCity"
+        android:title="Choose Location"
+        android:visible="true"
+        app:showAsAction="always|withText" />
+
+<!--    <item-->
+<!--        android:id="@+id/overflow_menu"-->
+<!--        android:icon="@drawable/ic_more_vert"-->
+<!--        android:title="Options"-->
+<!--        app:showAsAction="always">-->
+<!--        <menu>-->
+<!--            <item-->
+<!--                android:id="@+id/temp_unit"-->
+<!--                android:icon="@drawable/units_f"-->
+<!--                android:title="Temp Unit" />-->
+<!--            <item-->
+<!--                android:id="@+id/weather_forecast"-->
+<!--                android:icon="@drawable/daily"-->
+<!--                android:title="Forecast" />-->
+<!--            <item-->
+<!--                android:id="@+id/location"-->
+<!--                android:icon="@drawable/location"-->
+<!--                android:title="Location" />-->
+<!--        </menu>-->
+<!--    </item>-->
+
+</menu>

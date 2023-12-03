@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+android:padding="8dp"
+android:background="@android:color/darker_gray">
+
+<TextView
+    android:id="@+id/menu_item_text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@android:color/white"
+    android:textSize="16sp"
+    android:textStyle="bold"
+    android:layout_gravity="center_vertical"
+    android:layout_marginEnd="8dp"
+    android:text="Choose F or C" />
+
+<ImageView
+    android:id="@+id/menu_item_icon"
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:src="@drawable/units_f"
+    android:layout_gravity="center_vertical" />
+
+    <TextView
+        android:id="@+id/menu_choose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_vertical"
+        android:layout_marginEnd="8dp"
+        android:text="Next 15 days Wether Forcast" />
+
+    <ImageView
+        android:id="@+id/menu_choose"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/daily"
+        tools:ignore="DuplicateIds" />
+    <TextView
+        android:id="@+id/menu_loc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_vertical"
+        android:layout_marginEnd="8dp"
+        android:text="Choose location" />
+
+    <ImageView
+        android:id="@+id/menu_loc"
+        android:layout_width="40dp"
+        android:layout_height="38dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/location"
+        tools:ignore="DuplicateIds" />
+</LinearLayout>

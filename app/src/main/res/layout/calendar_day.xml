@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fontFamily="sans-serif-thin">
+
+    <TextView
+        android:id="@+id/calendar_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#7182E1"
+        android:padding="4dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:fontFamily="sans-serif-thin"/>
+
+    <ImageView
+        android:id="@+id/calendar_day_icon"
+        android:layout_width="194dp"
+        android:layout_height="116dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.537"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calendar_date" />
+
+    <TextView
+        android:id="@+id/calendar_minmax"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:paddingStart="16dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/calendar_date"
+        app:layout_constraintTop_toBottomOf="@+id/calendar_day_icon"
+        android:fontFamily="sans-serif-thin"/>
+
+    <TextView
+        android:id="@+id/calendar_day_desc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingStart="8dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/calendar_minmax"
+        app:layout_constraintTop_toBottomOf="@+id/calendar_minmax"
+        android:fontFamily="sans-serif-thin"/>
+
+    <TextView
+        android:id="@+id/calendar_day_precip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingStart="8dp"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        android:fontFamily="sans-serif-thin"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintHorizontal_bias="0.232"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calendar_day_desc" />
+
+    <TextView
+        android:id="@+id/calendar_day_uv_index"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="4dp"
+        android:fontFamily="sans-serif-thin"
+        android:paddingStart="8dp"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.848"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/calendar_day_desc" />
+
+    <TextView
+        android:id="@+id/calendar_day_morning"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="40dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/calendar_day_afternoon"
+        app:layout_constraintTop_toBottomOf="@+id/calendar_day_uv_index"
+        android:fontFamily="sans-serif-thin"/>
+
+    <TextView
+        android:id="@+id/calendar_day_afternoon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toTopOf="@+id/calendar_day_morning"
+        android:fontFamily="sans-serif-thin"/>
+
+    <TextView
+        android:id="@+id/calendar_day_night"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/calendar_day_evening"
+        app:layout_constraintTop_toTopOf="@+id/calendar_day_morning"
+        android:fontFamily="sans-serif-thin" />
+
+    <TextView
+        android:id="@+id/calendar_day_evening"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toTopOf="@+id/calendar_day_afternoon"
+        android:fontFamily="sans-serif-thin"/>
+
+    <TextView
+        android:id="@+id/calendar_day_morning_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="24dp"
+        android:text="@string/morning_label"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/calendar_day_morning"
+        app:layout_constraintStart_toStartOf="@+id/calendar_day_morning"
+        app:layout_constraintTop_toBottomOf="@+id/calendar_day_morning"
+        android:fontFamily="sans-serif-thin"/>
+
+    <TextView
+        android:id="@+id/calendar_day_afternoon_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="24dp"
+        android:text="@string/afternoon_label"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/calendar_day_afternoon"
+        app:layout_constraintStart_toStartOf="@+id/calendar_day_afternoon"
+        app:layout_constraintTop_toBottomOf="@+id/calendar_day_afternoon"
+        android:fontFamily="sans-serif-thin"/>
+
+    <TextView
+        android:id="@+id/calendar_day_evening_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="24dp"
+        android:text="@string/evening_label"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/calendar_day_evening"
+        app:layout_constraintStart_toStartOf="@+id/calendar_day_evening"
+        app:layout_constraintTop_toBottomOf="@+id/calendar_day_evening"
+        android:fontFamily="sans-serif-thin"/>
+
+    <TextView
+        android:id="@+id/calendar_day_night_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="24dp"
+        android:text="@string/night_label"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/calendar_day_night"
+        app:layout_constraintStart_toStartOf="@+id/calendar_day_night"
+        app:layout_constraintTop_toBottomOf="@+id/calendar_day_night"
+        android:fontFamily="sans-serif-thin"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+</androidx.constraintlayout.widget.ConstraintLayout>
