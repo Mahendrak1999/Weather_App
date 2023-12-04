@@ -1,4 +1,4 @@
-# Weather App - ITMD 555 Project
+# Weather App 
 
 ## Welcome
 
