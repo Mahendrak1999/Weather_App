@@ -1,8 +1,8 @@
 # Weather App 
-
+![Home](https://github.com/Mahendrak1999/Weather_App/blob/master/Home%20png.png)
 ## Welcome
 
-This Weather App is a collaborative project developed by Ankita Bhutkar (A20513345) and Mahendra Koravi (A20513294) as part of the ITMD 555 course.
+This Weather App is an Android App  developed by Mahendra Koravi.
 
 ## Project Overview
 
@@ -21,6 +21,8 @@ Our Weather App originated from the task of temperature conversion and evolved i
 - Task Bar: Display UV Index, Humidity & Visibility of the day
 - Other Weather Info: Showing selected day, date, current time, and year.
 - Selected Day: Displaying Sunrise and Sunset timings of the chosen day.
+
+![Features](https://github.com/Mahendrak1999/Weather_App/blob/master/Features.png)
 
 ### Technical Challenges
 
@@ -56,4 +58,5 @@ To use the Weather App, you need to generate your API token from [Visual Crossin
 ---
 
 Feel free to add more details, code snippets, or customize the structure based on your project's specifics. Including images, links, and properly formatting the document will enhance the overall look of your GitHub README.
+![SS](https://github.com/Mahendrak1999/Weather_App/blob/master/SS.png)
 
