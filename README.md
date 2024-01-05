@@ -1,4 +1,5 @@
-# Weather App 
+# WeatherMate
+## Your Simple and Precise Android Weather Companion 
 ![Home](https://github.com/Mahendrak1999/Weather_App/blob/master/Home%20png.png)
 ## Welcome
 
